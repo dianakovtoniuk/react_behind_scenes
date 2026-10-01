@@ -1,6 +1,6 @@
 # React Behind The Scenes
 
-A small learning project built with React and TypeScript that shows how React renders components, when it re-renders them and how to avoid unnecessary work. Every component writes a styled message to the browser console when it renders, so you can follow the render flow while using the app.
+A project built with React and TypeScript that shows how React renders components, when it re-renders them and how to avoid unnecessary work. Every component writes a styled message to the browser console when it renders, so you can follow the render flow while using the app.
 
 ## Features
 
