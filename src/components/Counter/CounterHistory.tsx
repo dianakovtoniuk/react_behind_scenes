@@ -1,8 +1,12 @@
 import { useState } from 'react';
 
-import { log } from '../../log.js';
+import { log } from '../../log';
 
-function HistoryItem({ count }) {
+type HistoryItemProps = {
+  count: number;
+};
+
+function HistoryItem({ count }: HistoryItemProps) {
   log('<HistoryItem /> rendered', 3);
 
   const [selected, setSelected] = useState(false);
@@ -18,7 +22,11 @@ function HistoryItem({ count }) {
   );
 }
 
-export default function CounterHistory({ history }) {
+type CounterHistoryProps = {
+  history: number[];
+};
+
+export default function CounterHistory({ history }: CounterHistoryProps) {
   log('<CounterHistory /> rendered', 2);
 
   return (
